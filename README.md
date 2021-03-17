@@ -10,23 +10,18 @@ zam-plugins
 lsp-plugins
 lsp-plugins-lv2
 
-For audio compression and gating, I find the Tap-Dynamics module to be especially useful and moddable.  For example, you can adjust its default behavior by making changes to the source code.  For example, in the file "tap_dynamics_presets.h" preset number 7 can provide good amplitude compression and gating if written as shown:
+### Modifying Your Debian / Ubuntu (and other) Audio
+  
+Plan to change defaults / presets by lediting **/etc/asound.conf** and **/etc/pulse/default.pa**  If you are on ALSA only (no PulseAudio), edit global settings in **/etc/asound.conf** or your own user settings in **~/.asoundrc**.
 
-	{ /* Compressor/Gate, threshold at -20 dB */
-		5, 
-		{
-			{-80.0f, -110.0f},
-			{-62.0f, -90.0f},
-			{-20.0f, -20.0f},
-			{0.0f, -10.0f},
-			{20.0f, -8.0f},
-		},
-	},
-  
-  ### Modifying Your Debian / Ubuntu (and other) Audio
-  
-  Plan to change defaults / presets by editing **/etc/asound.conf** and **/etc/pulse/default.pa**
-  
-  If editing levels by hand, look in **/var/lib/alsa**
-  
+Normally, use **Alsamixer** or **Pavucontrol** to set volume levels.  Save with:
+```bash
+sudo alsactl store
+```
+
+If you edit default levels by hand, look in **/var/lib/alsa**.  Edit and save as root.
+
+### Guides and Examples for LADSPA / LV2 audio processing in Linux:
+[https://github.com/AB9IL/linux-audio/blob/main/realtime-systemwide-processor.md](Realtime System Wide Linux Audio Processing)
+[https://github.com/AB9IL/linux-audio/blob/main/linux-audio-processor-nopulse-nodmix.md](Audio Processing Without PulseAudio and Dmix)
   
