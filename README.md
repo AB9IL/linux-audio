@@ -1,7 +1,7 @@
 # linux-audio
 Scripts, configs, and snipptes useful for audio on GNU/Linux
 
-## Suggested LADSPA / LV2 Plugins for audio processing on your Linux machine:
+### Suggested LADSPA / LV2 Plugins for audio processing on your Linux machine:
 My suggestion is to stock up on audio plugins; there is a great variety and you may want one of these someday for a specific task:
 
 swh-plugins
@@ -23,7 +23,7 @@ For audio compression and gating, I find the Tap-Dynamics module to be especiall
 		},
 	},
   
-  ## Modifying Your Debian / Ubuntu (and other) Audio
+  ### Modifying Your Debian / Ubuntu (and other) Audio
   
   Plan to change defaults / presets by editing **/etc/asound.conf** and **/etc/pulse/default.pa**
   
