@@ -1,4 +1,4 @@
-# Configuring Pulseaudio: System-Wide Audio EQ, Compression, and Limiting
+# Configuring Pulseaudio: Global EQ, Compression, and Limiting
 
 Computers running Ubuntu, Linux Mint, Debian, or other operating distros with PulseAudio must configure PulseAudio to load the LADSPA or LV2 plugins, route audio data through them, and provide processed audio as the default sink.  This is done with two files: **/etc/pulse/default.pa** and **/etc/asound.conf**.
 
