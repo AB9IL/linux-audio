@@ -71,16 +71,16 @@ Processor plugin settings for PulseAudio.  These are not complete Pulseaudio sou
 
 ```bash
 #Broadcast Quality
-plugin=fast_lookahead_limiter_1913 master=alsa_output.pci-0000_05_01.0.analog-surround-71 control=6,0,1.0
+plugin=fast_lookahead_limiter_1913 control=6,0,1.0
 plugin=tap_dynamics_m master=ladspa_output.fastLookaheadLimiter control=4,700,8,20,13
 plugin=tap_eq master=ladspa_output.tap_dynamics_m control=3,3,0,-8,0,0,0,0,100,300,500,1000,3000,6000,12000,15000 
 
 #Normal Voice Quality
-plugin=fast_lookahead_limiter_1913 master=alsa_output.pci-0000_05_01.0.analog-surround-71 control=10,0,0.3
+plugin=fast_lookahead_limiter_1913 control=10,0,0.3
 plugin=tap_dynamics_m master=ladspa_output.fastLookaheadLimiter control=4,300,15,15,13
 plugin=tap_eq master=ladspa_output.tap_dynamics_m control=-50,-50,-50,-5,-5,-50,-50,-50,100,300,500,1000,3000,6000,12000,15000 
 
 #Hardcore Ham DX / Contesting
-plugin=fast_lookahead_limiter_1913 master=alsa_output.pci-0000_05_01.0.analog-surround-71 control=15,0,0.3
+plugin=fast_lookahead_limiter_1913 control=15,0,0.3
 plugin=tap_dynamics_m master=ladspa_output.fastLookaheadLimiter control=4,300,20,20,13
 plugin=tap_eq master=ladspa_output.tap_dynamics_m control=-6,-6,-3,0,0,0,0,0,100,200,400,1000,3000,6000,12000,15000 
