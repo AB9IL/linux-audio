@@ -22,6 +22,6 @@ sudo alsactl store
 If you edit default levels by hand, look in **/var/lib/alsa**.  Edit and save as root.
 
 ### Guides and Examples for LADSPA / LV2 audio processing in Linux:
-[Realtime System Wide Linux Audio Processing](/realtime-systemwide-processor.md)
-[Audio Processing WITH Pulseaudio and Dmix](/linux-audio-processor-with-dmix.md)
-[Audio Processing Without PulseAudio and Dmix](/linux-audio-processor-nopulse-nodmix.md)
+[Realtime System Wide Linux Audio Processing](/realtime-systemwide-processor.md)  
+[Audio Processing WITH Pulseaudio and Dmix](/linux-audio-processor-with-dmix.md)  
+[Audio Processing Without PulseAudio and Dmix](/linux-audio-processor-nopulse-nodmix.md)  
