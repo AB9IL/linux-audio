@@ -10,7 +10,7 @@ Finally, the "Fast Lookahead Limiter" is applied to hard limit the audio for add
 
 Here is the actual speech processor data.  Paste it into the file **/etc/asound.conf**.  If there presently is no **/etc/asound.conf**, then create it.  For individual users on a system who want a customized audio configuration, this data may be written to the file **~/.asoundrc** (a hidden file in the user's home directory).
 
-<code>
+```bash
 # ALSA / LADSPA Speech Processor
 #Place this in /etc/asound.conf or ~/.asoundrc
 
@@ -92,4 +92,4 @@ ctl.!default {
 type hw           
 card 0
 }
-</code>
+```
