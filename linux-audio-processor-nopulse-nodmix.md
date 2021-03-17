@@ -1,4 +1,4 @@
-# Configuring ALSA (noPulseaudio, no dmix)
+# Configuring ALSA (no Pulseaudio, no dmix)
 
 System-wide audio processing without PulseAudio requires configuring ALSA.  ALSA will take raw audio, pass the data through a series of LADSPA plugins in real time, and export processed audio as the default sound.  All of this is set up, system wide, in the file **/etc/asound.conf**.
 
